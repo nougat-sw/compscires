@@ -1,6 +1,5 @@
 :root {
     --color-item-bg: #f5f3ee;
-    --color-item-border: #852631;
     --color-table-border: #9e9e9e;
     --color-links: rgb(36, 62, 180);
     --color-secondary: #852631;
@@ -55,7 +54,7 @@ li {
     margin-top: 4px;
     margin-bottom: 4px;
     padding: 6px;
-    border-left: 3px solid var(--color-item-border);
+    border-left: 3px solid var(--color-secondary);
 }
 
 h1 {
