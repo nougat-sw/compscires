@@ -13,23 +13,27 @@
 }
 
 body {
-    background-color: var(--color-page);
+    font-size: 0.875rem;
 }
 
 main {
-    margin: 8px;
+    margin: 0.5rem;
 }
 
 table {
     border-collapse: collapse;
-    font-size: 14px;
 }
 
 th,
 td {
     border-bottom: 1px solid var(--color-table-border);
     vertical-align: top;
-    padding: 5px;
+    padding: 0.25rem;
+}
+
+td:first-child {
+    color: var(--color-secondary);
+    font-weight: bold;
 }
 
 tbody tr:last-child td {
@@ -45,29 +49,27 @@ a {
     color: var(--color-links);
 }
 
-a:hover {
+table a:hover {
     color: var(--color-secondary);
 }
 
 li {
     background-color: var(--color-item-bg);
-    margin-top: 4px;
-    margin-bottom: 4px;
-    padding: 6px;
+    margin-block: 0.25rem;
+    padding: 0.25rem;
     border-left: 3px solid var(--color-secondary);
 }
 
 h1 {
-    margin-bottom: 10px;
+    margin-bottom: 0.75rem;
 }
 
 footer {
     background-color: var(--color-secondary);
     text-align: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-block: 0.5rem;
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 footer a {
@@ -75,23 +77,7 @@ footer a {
     text-decoration: underline;
 }
 
-footer a:hover {
-    color: white;
-}
-
 @media (max-width: 600px) {
-    thead {
-        display: none;
-    }
-    table {
-        border-collapse: initial;
-    }
-
-    td {
-        border: initial;
-        display: block;
-    }
-
     table,
     tbody,
     tr,
@@ -100,34 +86,43 @@ footer a:hover {
         display: block;
     }
 
+    thead {
+        display: none;
+    }
+
+    table {
+        border-collapse: initial;
+    }
+
+    tr {
+        margin-block: 1rem;
+    }
+
     td {
+        border: initial;
         padding: 0;
     }
 
-    tbody tr td:first-child {
+    td:first-child {
         font-weight: bold;
-        font-size: larger;
+        font-size: 1rem;
         background-color: var(--color-secondary);
         color: white;
-        margin-bottom: 10px;
-        padding: 4px;
+        margin-bottom: 0.5rem;
+        padding: 0.25rem;
     }
 
-    tr td:nth-child(2)::before {
+    td:nth-child(2)::before {
         content: "Lectures";
         display: block;
         color: var(--color-secondary);
         font-weight: bold;
     }
-    tr td:nth-child(3)::before {
+
+    td:nth-child(3)::before {
         content: "Readings";
         display: block;
         color: var(--color-secondary);
         font-weight: bold;
-    }
-
-    tr {
-        margin-top: 16px;
-        margin-bottom: 16px;
     }
 }
