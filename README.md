@@ -6,6 +6,10 @@ A collection of useful resources for the students of computer science.
 
 You can visit the website [here](https://compscires.netlify.app).
 
+All the lectures are accessible for free.
+
+Most of the books are paid. The ones accessible for free are listed as links to their official websites.
+
 ## Contributing
 
 For suggestions, please open an issue [here](https://github.com/nougat-sw/compscires/issues).
